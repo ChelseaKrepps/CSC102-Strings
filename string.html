@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Chelsea Krepps
+        CSC 102
+        User Input Validation-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <!-- Linking .css and .js-->
+    <script src = "string.js"></script>
+    <link rel="stylesheet" href="string.css">
+</head>
+<body>
+    <!--text-->
+    <h1> Customer ID Creator </h1>
+    <h2> Username created by First and Last Name, and Zip. Cannot be greater than 20 charcters</h2>
+    <form id = "userInput" onsubmit = "return false">  
+        <!-- form inputs-->
+      First Name: <input type = "text" id = "FirstName"/>
+       <br>
+       Last Name : <input type = "text" id = "SecondName"/>
+       <br>
+       Zip Code : <input type = "number" id = "ZipCode"/>
+       <br>
+       <input type = "Submit" onclick = "validate()"/>
+<!--error message/ID created-->
+       </form>
+       <p id = "InputStatus">Status of Input</p>
+
+<!--Palindome Checker-->
+       <br>
+       <h1> Palindrome Checker</h1>
+       <h2> Enter a word below to check if it is a Palindrome!</h2>
+<!--Palindrome Form-->
+       <form id = "palindromeChecker" onsubmit = "return false">
+       Enter Word : <input type = "text" id = "Palindrome"/>
+       <br>
+       <input type ="Submit" onclick = "palindromeValidate()"/>
+       <br>
+       </form>
+       <p id = "palindromeStatus"> Is it a PALINDROME???</p>
+        
+    
+</body>
+</html>
